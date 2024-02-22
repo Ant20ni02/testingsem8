@@ -1,3 +1,6 @@
+//Marco Antonio Gardida Cortés A01423221
+//Miguel Jiménez Padilla A01423189
+//Alejandro Hidalgo Badillo A01423412
 import './App.css';
 import './Table.css';
 import React, { useState, useEffect } from 'react';
