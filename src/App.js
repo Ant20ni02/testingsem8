@@ -1,4 +1,5 @@
 import './App.css';
+import './Table.css';
 import React, { useState, useEffect } from 'react';
 
 function App() {
@@ -24,17 +25,23 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h2>Spreadsheet Data</h2>
-      <tbody>
-          {data.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td key={cellIndex}>{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
+    <div className='container'>
+      <div>
+        <h2>Formulario</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHvYCu6_YT5OUR_Bu6RyZX7W0kVANlsGCl6ktYJeVZIK_4Lw/viewform?embedded=true" width="1000" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+      </div>
+      <div>
+        <h2>Datos de la hoja de cálculo</h2>
+        <tbody>
+            {data.map((row, rowIndex) => (
+              <tr key={rowIndex}>
+                {row.map((cell, cellIndex) => (
+                  <td key={cellIndex}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </div>
 
     </div>
   );

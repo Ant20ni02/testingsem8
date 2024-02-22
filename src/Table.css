@@ -1,0 +1,34 @@
+/* Basic table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f9f9f9; /* Light grey background for the table */
+}
+
+td, th {
+  border: 1px solid #ddd; /* Light grey border for each cell */
+  text-align: left;
+  padding: 8px;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for the table header */
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
